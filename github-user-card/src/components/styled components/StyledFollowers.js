@@ -6,10 +6,14 @@ const StyledFollowers = styled.div `
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     margin: 3%;
-    width: 80%;
+    width: 90%;
   
+    h2 {
+        width: 80%;
+        text-align: center;
+    }
 
 `
 

@@ -9,7 +9,7 @@ function FollowerCard(props) {
     return (
         <StyledFollowerCard>
             <h3>{follower.login}</h3>
-            <p>Profile: {follower.html_url}</p>
+            <p>Profile: <a href={follower.html_url}>{follower.html_url}</a></p>
             <img src={follower.avatar_url} />
             {/* <p>Location: {follower.location}</p>
             <p>Followers: {follower.followers}</p>
