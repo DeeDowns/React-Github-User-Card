@@ -7,6 +7,7 @@ function UserCard(props) {
     return(
         <div>
             <h2>User Card Test</h2>
+            <img src={userData.avatar_url} />
             <h3>{userData.name}</h3>
             <h4>{userData.login}</h4>
             <p>Location: {userData.location}</p>

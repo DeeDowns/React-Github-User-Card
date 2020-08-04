@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import FollowerCard from './FollowerCard'
+import StyledFollowers from './styled components/StyledFollowers'
 
 class Followers extends React.Component {
     constructor() {
@@ -24,13 +25,13 @@ class Followers extends React.Component {
 
     render() {
         return (
-            <div>
+            <StyledFollowers>
                 <h2>Followers Test</h2>
                 {this.state.followersData.map(follower => (
                     <FollowerCard follower={follower} key={follower.id} />
                     ))
                 }
-            </div>
+            </StyledFollowers>
         )
     }
    

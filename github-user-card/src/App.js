@@ -9,8 +9,7 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      userData: {},
-      // followersData: []
+      userData: {}
     }
   }
 
@@ -26,18 +25,9 @@ class App extends React.Component {
       .catch(err => console.log(err))
   }
 
-  // componentDidMount() {
-  //   axios
-  //   .get('https://api.github.com/users/DeeDowns/followers')
-  //   .then(res => {
-  //     console.log('followers data', res.data)
-  //   })
-  // }
-
-
   render() {
     return (
-      <div>
+      <div className='App'>
         <h1>Github Friends</h1>
         <UserCard userData={this.state.userData}/>
         <Followers />
